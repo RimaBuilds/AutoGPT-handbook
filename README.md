@@ -16,7 +16,7 @@ In this guide, we'll explore the various features of Autogpt and outline the bes
 
 You can also use a virtual environment to contain the installation of Autogpt, and to ensure you do not run into any errors when installing dependencies or running autogpt.
 
-API needed for autogpt:
+#### API needed for autogpt:
 
 1. OpenAI API key - this key is required to use the OpenAI API which autogpt is built on top of. You can get an API key by signing up for the OpenAI API program.
 
@@ -26,7 +26,7 @@ API needed for autogpt:
 
 Once you have obtained these keys, you need to edit the secrets.json file in the repository and add the API keys listed above.
 
-Changes When Cloning The Github Repository:
+#### Changes When Cloning The Github Repository:
 
 1. You need to edit the secrets.json file in the repository and add the API keys listed above. This is because the API keys are sensitive information that should not be hardcoded into the application. By adding them to the secrets.json file, you ensure that the keys are kept secure and not exposed to potential attackers.
 
