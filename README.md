@@ -17,23 +17,23 @@ In this guide, we'll explore the various features of Autogpt and outline the bes
 
 You can also use a virtual environment to contain the installation of Autogpt, and to ensure you do not run into any errors when installing dependencies or running autogpt.
 
-### API needed for Autogpt
+### 📌 API needed for Autogpt
 
-1. OpenAI API key - this key is required to use the OpenAI API which autogpt is built on top of. You can get an API key by signing up for the OpenAI API program.
+1. **OpenAI API key**- this key is required to use the OpenAI API which autogpt is built on top of. You can get an API key by signing up for the OpenAI API program.
 
-2. GPT3_API_SECRET_KEY - this key is required to authenticate your request to the OpenAI API. You can get this key by following the steps on the OpenAI API website.
+2. **GPT3_API_SECRET_KEY** - this key is required to authenticate your request to the OpenAI API. You can get this key by following the steps on the OpenAI API website.
 
-3. GPT3_API_KEY - this key is required to authorize your access to the OpenAI API. You can also get this key by following the steps on the OpenAI API website.
+3. **GPT3_API_KEY** - this key is required to authorize your access to the OpenAI API. You can also get this key by following the steps on the OpenAI API website.
 
 Once you have obtained these keys, you need to edit the `secrets.json` file in the repository and add the API keys listed above.
 
-### Changes When Cloning The Github Repository
+### 📝 Changes When Cloning The Github Repository
 
 1. You need to edit the `secrets.json` file in the repository and add the API keys listed above. This is because the API keys are sensitive information that should not be hardcoded into the application. By adding them to the `secrets.json` file, you ensure that the keys are kept secure and not exposed to potential attackers.
 
 2. You also need to add your own prompts to the `prompts.json` file to make autogpt more useful for your particular use case. The prompts provided in the repository are general prompts that may not be applicable to your project. By adding your own prompts, you can train autogpt to generate responses that are tailored to your specific use case.
 
-## Prompt Engineering Guide
+## 💻 Prompt Engineering Guide
 
 1. To prompt autogpt, use the command `autogpt -p <prompt>` in your terminal. Replace `<prompt>` with the text that you want to prompt the model with.
 
@@ -45,7 +45,7 @@ Once you have obtained these keys, you need to edit the `secrets.json` file in t
 
 5. Another way to use autogpt is by integrating it into your code. You can import the `Autogpt` class into your code and use it to generate responses programmatically. This can be useful if you want to generate responses in a specific context or if you want to automate the generation of text.
 
-## Best Ways for Prompt Engineering
+## 🔥 Best Ways for Prompt Engineering
 Here are some of the best ways to use Autogpt for prompt engineering:
 
 1. Use Autogpt to generate code snippets:
@@ -170,7 +170,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
     generated_output = response.choices[0].text
     print(generated_output)
     ```
-## Best Use of Autogpt in Coding and Debugging Guide
+## ✨ Best Use of Autogpt in Coding and Debugging Guide
 
 1. Use autogpt to generate descriptive comments for your code automatically. This can help make your code more readable and easier to understand, especially for team members who may not be familiar with the codebase.
 
@@ -180,9 +180,5 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 
 4. Use autogpt to generate documentation for your project. Autogpt can generate API documentation, user guides, and other types of documentation automatically, saving you time and effort.
 
-## Conclusion
+## 📘 Conclusion
 Autogpt is a powerful tool that can help you in coding and prompt engineering. It can generate code snippets, check code syntax, improve code, generate test cases, generate documentation and execute python files. By using Autogpt, you can save time and increase productivity.
-
-
-
-
