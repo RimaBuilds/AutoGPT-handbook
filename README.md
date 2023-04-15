@@ -4,30 +4,33 @@ Autogpt is a state-of-the-art end-to-end platform for developing Neural Language
 In this guide, we'll explore the various features of Autogpt and outline the best practices and tips for utilizing Autogpt. 
 
 ## Installation Guide to Autogpt
-To use Autogpt, you will need to install it using pip. Here are the steps to follow:
+1. To install autogpt, we need to first clone the Github repository. You can do this using the command "git clone https://github.com/autogpt/autogpt.git" on your terminal or by clicking on the "Code" button on the repository page and downloading the zip file.
 
-1. Install pip:
-   ```
-   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-   python get-pip.py
-   ```
+2. Once you have downloaded the repository, navigate to the "autogpt" directory in your terminal.
 
-2. Install Autogpt:
-   ```
-   pip install autogpt
-   ```
+3. Install the required dependencies using the command "pip install -r requirements.txt". This will install all the necessary packages required to run autogpt.
 
-3. Install Dependencies:
-   ```
-   pip install tensorflow==2.4.0
-   pip install PyYAML
-   pip install gpt-2-tensorflow==0.5.3
-   ```
+4. Next, run the command "python setup.py install" to install autogpt.
 
-4. Clone this Repository:
-   ```
-   git clone <repo_url>
-   ```
+5. Verify that the installation was successful by running the command "autogpt --version". You should see the version number displayed in the terminal.
+
+You can also use a virtual environment to contain the installation of Autogpt, and to ensure you do not run into any errors when installing dependencies or running autogpt.
+
+API needed for autogpt:
+
+1. OpenAI API key - this key is required to use the OpenAI API which autogpt is built on top of. You can get an API key by signing up for the OpenAI API program.
+
+2. GPT3_API_SECRET_KEY - this key is required to authenticate your request to the OpenAI API. You can get this key by following the steps on the OpenAI API website.
+
+3. GPT3_API_KEY - this key is required to authorize your access to the OpenAI API. You can also get this key by following the steps on the OpenAI API website.
+
+Once you have obtained these keys, you need to edit the secrets.json file in the repository and add the API keys listed above.
+
+Changes When Cloning The Github Repository:
+
+1. You need to edit the secrets.json file in the repository and add the API keys listed above. This is because the API keys are sensitive information that should not be hardcoded into the application. By adding them to the secrets.json file, you ensure that the keys are kept secure and not exposed to potential attackers.
+
+2. You also need to add your own prompts to the prompts.json file to make autogpt more useful for your particular use case. The prompts provided in the repository are general prompts that may not be applicable to your project. By adding your own prompts, you can train autogpt to generate responses that are tailored to your specific use case.
 
 ## Best Ways for Prompt Engineering
 Here are some of the best ways to use Autogpt for prompt engineering:
