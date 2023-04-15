@@ -33,6 +33,18 @@ Once you have obtained these keys, you need to edit the `secrets.json` file in t
 
 2. You also need to add your own prompts to the `prompts.json` file to make autogpt more useful for your particular use case. The prompts provided in the repository are general prompts that may not be applicable to your project. By adding your own prompts, you can train autogpt to generate responses that are tailored to your specific use case.
 
+## Prompt Engineering Guide
+
+1. To prompt autogpt, use the command `autogpt -p <prompt>` in your terminal. Replace `<prompt>` with the text that you want to prompt the model with.
+
+2. You can also run autogpt in interactive mode by using the command `autogpt -i` in your terminal. This will allow you to input prompts and get responses from the model in real-time.
+
+3. For best results, make sure your prompts are specific and well-defined. This will give autogpt a clear understanding of what you are trying to achieve and help it generate more accurate responses.
+
+4. When reviewing the model's responses, keep in mind that autogpt is a language model and not a human. As such, it may generate responses that are not entirely accurate or suitable for your use case. It is up to you to review the responses and make any necessary modifications.
+
+5. Another way to use autogpt is by integrating it into your code. You can import the `Autogpt` class into your code and use it to generate responses programmatically. This can be useful if you want to generate responses in a specific context or if you want to automate the generation of text.
+
 ## Best Ways for Prompt Engineering
 Here are some of the best ways to use Autogpt for prompt engineering:
 
@@ -158,6 +170,19 @@ Here are some of the best ways to use Autogpt for prompt engineering:
     generated_output = response.choices[0].text
     print(generated_output)
     ```
+## Best Use of Autogpt in Coding and Debugging Guide
+
+1. Use autogpt to generate descriptive comments for your code automatically. This can help make your code more readable and easier to understand, especially for team members who may not be familiar with the codebase.
+
+2. Use autogpt to generate boilerplate code for your project. For example, you can use autogpt to generate code for setting up logging, creating configuration files, or initializing the database.
+
+3. Use autogpt to generate test cases for your code. This can help ensure that your code is working as expected and that any changes you make to the code do not introduce new bugs.
+
+4. Use autogpt to generate documentation for your project. Autogpt can generate API documentation, user guides, and other types of documentation automatically, saving you time and effort.
 
 ## Conclusion
 Autogpt is a powerful tool that can help you in coding and prompt engineering. It can generate code snippets, check code syntax, improve code, generate test cases, generate documentation and execute python files. By using Autogpt, you can save time and increase productivity.
+
+
+
+
