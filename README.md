@@ -5,15 +5,11 @@ In this guide, we'll explore the various features of Autogpt and outline the bes
 
 ## 🚀 Installation Guide to Autogpt
 
-1. To install autogpt, we need to first clone the Github repository. You can do this using the command `git clone https://github.com/autogpt/autogpt.git` on your terminal or by clicking on the "Code" button on the repository page and downloading the zip file.
+1. To install autogpt, we need to first clone the Github repository. You can do this using the command `git clone https://github.com/significant-gravitas/auto-gpt.git` on your terminal or by clicking on the "Code" button on the repository page and downloading the zip file.
 
-2. Once you have downloaded the repository, navigate to the "autogpt" directory in your terminal.
+2. follow the insallation guide in the repo
 
-3. Install the required dependencies using the command `pip install -r requirements.txt`. This will install all the necessary packages required to run autogpt.
-
-4. Next, run the command `python setup.py install` to install autogpt.
-
-5. Verify that the installation was successful by running the command `autogpt --version`. You should see the version number displayed in the terminal.
+3. Verify that the installation was successful by running the command `autogpt --version`. You should see the version number displayed in the terminal.
 
 You can also use a virtual environment to contain the installation of Autogpt, and to ensure you do not run into any errors when installing dependencies or running autogpt.
 
@@ -72,7 +68,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 
 3. Use Autogpt to improve code:
    ```
-   from autogpt import GPT
+
 
    generator = GPT(engine="text-davinci-002")
    code_string = '' # your code
@@ -105,7 +101,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 
 6. Use Autogpt for debugging:
    ```
-   from autogpt import GPT
+
 
    generator = GPT(engine="text-davinci-002")
    response = generator.generate(prompt="Debug code snippet for 'Function name'")
@@ -127,7 +123,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 
 8. Use Autogpt for browsing the internet
    ```
-   from autogpt import GPT
+
    import webbrowser
 
    generator = GPT(engine="text-davinci-002")
@@ -139,7 +135,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 
 9. Use Autogpt for searching files
    ```
-   from autogpt import GPT
+
    import os
 
    generator = GPT(engine="text-davinci-002")
@@ -163,7 +159,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 
 11. Use Autogpt for auto-prompt:
     ```
-    from autogpt import GPT
+
 
     generator = GPT(engine="text-davinci-002")
     response = generator.generate(prompt="")
