@@ -149,7 +149,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 
 10. Use Autogpt for code completion:
     ```
-    from autogpt import GPT
+
 
     generator = GPT(engine="text-davinci-002")
     response = generator.generate(prompt="Complete code snippet for 'Function name'")
