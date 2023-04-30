@@ -47,7 +47,6 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 1. Use Autogpt to generate code snippets:
    ```
    prompt = "Generate a function to get the sum of two numbers"
-   from autogpt import GPT
 
    generator = GPT(engine="text-davinci-002", prompt=prompt)
    response = generator.generate()
@@ -58,7 +57,7 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 2. Use Autogpt to check code syntax:
    ```
    code_string = '' # your code
-   from autogpt import GPT
+   
 
    generator = GPT(engine="text-davinci-002", prompt=code_string)
    response = generator.generate()
@@ -80,7 +79,6 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 4. Use Autogpt to generate test cases:
    ```
    prompt = "Write a test to check the sum of two numbers"
-   from autogpt import GPT
 
    generator = GPT(engine="text-davinci-002", prompt=prompt)
    response = generator.generate()
@@ -91,7 +89,6 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 5. Use Autogpt to generate documentation:
    ```
    prompt = "Generate documentation for the function 'Function name'"
-   from autogpt import GPT
 
    generator = GPT(engine="text-davinci-002", prompt=prompt)
    response = generator.generate()
@@ -112,8 +109,6 @@ Here are some of the best ways to use Autogpt for prompt engineering:
 7. Use Autogpt to execute python file:
    ```
    file_name = "" # name of your python file you want to execute
-   from autogpt import GPT
-   import os
 
    generator = GPT(engine="text-davinci-002")
    response = generator.generate(prompt="Execute the file " + file_name)
