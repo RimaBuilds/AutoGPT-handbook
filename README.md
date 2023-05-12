@@ -1,9 +1,9 @@
-# Autogpt: A  Guide to Prompt Engineering
+# 👀🔍 Autogpt: A  Guide to Prompt Engineering 🔍👀
 Auto-GPT is an open-source AI tool that leverages the GPT-4 or GPT-3.5 APIs from OpenAI to accomplish user-defined objectives expressed in natural language. It does this by dissecting the main task into smaller components and autonomously utilizing various resources in a cyclic process.
 
 In this guide, we'll explore the various features of Autogpt and outline the best practices and tips for utilizing Autogpt for coding. 
 
-## Table of content 
+## 🧩 Table of content 
 
 - [Installation Guide to Autogpt](#-installation-guide-to-autogpt)
     - [API needed for Autogpt](#-api-needed-for-autogpt)
