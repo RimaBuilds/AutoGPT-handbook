@@ -1,14 +1,35 @@
 # Autogpt: A  Guide to Prompt Engineering
-Autogpt is a state-of-the-art end-to-end platform for developing Neural Language Processing (NLP) models. Built on top of the OpenAI GPT architecture, Autogpt streamlines the process of training, customizing, and deploying NLP models by automating a significant proportion of the development process.
+Auto-GPT is an open-source AI tool that leverages the GPT-4 or GPT-3.5 APIs from OpenAI to accomplish user-defined objectives expressed in natural language. It does this by dissecting the main task into smaller components and autonomously utilizing various resources in a cyclic process.
 
-In this guide, we'll explore the various features of Autogpt and outline the best practices and tips for utilizing Autogpt. 
+In this guide, we'll explore the various features of Autogpt and outline the best practices and tips for utilizing Autogpt for coding. 
+
+## Table of content 
+
+- [Installation Guide to Autogpt](#-installation-guide-to-autogpt)
+    - [API needed for Autogpt](#-api-needed-for-autogpt)
+    - [Changes When Cloning The Github Repository](#-changes-when-cloning-the-github-repository)
+- [Prompt Engineering Guide](#-prompt-engineering-guide)
+- [Best Ways for Prompt Engineering](#-best-ways-for-prompt-engineering)    
+     1. [Use Autogpt to execute code](#1-use-autogpt-to-execute-code)
+     2. [Use Autogpt to execute shell](#2-use-autogpt-to-execute-shell)
+     3. [Use Autogpt to analyze code](#3-use-autogpt-to-analyze-code)
+     4. [Use Autogpt to improve code](#4-use-autogpt-to-improve-code)
+     5. [Use Autogpt to generate documentation](#5-use-autogpt-to-generate-documentation)
+     6. [Use Autogpt for debugging](#6-use-autogpt-for-debugging)
+     7. [Use Autogpt for searching google](#7-use-autogpt-for-searching-google)
+     8. [Use Autogpt for web scraping](#8-use-autogpt-for-web-scraping)
+     9. [Use Autogpt for searching files](#9-use-autogpt-for-searching-files)
+     10. [Use Autogpt for github cloning](#10-use-autogpt-for-github-cloning)
+- [Best Use of Autogpt in Coding and Debugging Guide](#-best-use-of-autogpt-in-coding-and-debugging-guide)
+- [Conclusion](#-conclusion)
 
 ## 🚀 Installation Guide to Autogpt
 
-1. To install autogpt, we need to first clone the  [Github repository](https://github.com/Significant-Gravitas/Auto-GPT/releases/latest). you can find the latest version here:  https://github.com/Significant-Gravitas/Auto-GPT/releases/latest.
-2. You can clone the repo using the command `git clone https://github.com/significant-gravitas/auto-gpt.git` on your terminal or by clicking on the "Code" button on the repository page and downloading the zip file.
-3. follow the insallation guide in the repo  [installation guide](https://docs.agpt.co/setup/)
-4. Verify that the installation was successful by running the command `autogpt --version`. You should see the version number displayed in the terminal.
+1. To install autogpt, we need to first clone the  [Github repository](https://github.com/Significant-Gravitas/Auto-GPT/releases/latest). 
+2. you can find the latest version here:  https://github.com/Significant-Gravitas/Auto-GPT/releases/latest.
+3. You can clone the repo using the command `git clone https://github.com/significant-gravitas/auto-gpt.git` on your terminal or by clicking on the "Code" button on the repository page and downloading the zip file.
+4. follow the insallation guide from the auto-gpt repo  [installation guide](https://docs.agpt.co/setup/)
+5. Verify that the installation was successful by running the command `autogpt --version`. You should see the version number displayed in the terminal.
 
 You can also use a virtual environment to contain the installation of Autogpt, and to ensure you do not run into any errors when installing dependencies or running autogpt.
 
@@ -25,7 +46,7 @@ Once you have obtained these keys, you need to edit the `.env` file in the repos
 
 also pay attention to the below:
 - **Allow local command execution** by changing to true if you want it to execute commands locally
-- **RESTRICT_TO_WORKSPACE** - if you dont want to restrict it to workspace folder, change to false
+- **Restrict to Workspace** - if you dont want to restrict it to workspace folder, change to false
 
 ### 📝 Changes When Cloning The Github Repository
 
@@ -178,7 +199,16 @@ The `improve_code` function will then call the AI function, which in turn uses t
    ```
    prompt = "Generate documentation for the function 'Function name'"
 
-   generator = openai(engine="text-davinci-002", prompt=prompt)
+   generator =   response = openai.Completion.create(
+            engine=engine,
+            prompt=prompt,
+            max_tokens=150,
+            n=1,
+            stop=None,
+            temperature=1.2,
+            presence_penalty=0.5,
+            frequency_penalty=0.5,
+        )
    ```
 
 ### 6. Use Autogpt for debugging:
